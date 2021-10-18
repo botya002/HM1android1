@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextstyle"
+        android:padding="15dp"
+        android:hint="Username"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:layout_editor_absoluteX="16dp"
+        android:id="@+id/edittextusername"
+        android:textColorHint="@color/white"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/edittextusername"
+        android:padding="15dp"
+        android:hint="Email"
+        android:textSize="25dp"
+        android:background="@color/transparet"
+        android:id="@+id/Email"
+        android:textColorHint="@color/white"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:hint="Password"
+        android:padding="15dp"
+        android:background="@drawable/edittextstylebuttom"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        android:id="@+id/passwword"
+        android:textColorHint="@color/white"
+        />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwword"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/white"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:cornerRadius="40dp"
+            android:id="@+id/materialbutton"
+            />
+
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:layout_constraintTop_toBottomOf="@id/materialbutton"
+        android:layout_marginTop="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/sova"
+        android:id="@+id/sova"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sova"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Trivia"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="REGISTER"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/register"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
